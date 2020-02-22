@@ -1,0 +1,4 @@
+/* hide [Ad] search results */
+.ads-ad{
+    display:none;
+}

@@ -1,0 +1,5 @@
+/* hides "cleaned by adblock for youtube"
+https://chrome.google.com/webstore/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk */
+ytd-video-primary-info-renderer a{
+    display:none !important;
+}
