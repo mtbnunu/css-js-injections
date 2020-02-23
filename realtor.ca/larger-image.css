@@ -1,0 +1,49 @@
+/* use full modal size */
+#pnlImageCarousel{
+    left: 0 !important;
+    margin-left: 0!important;
+    top: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    height: 100% !important;   
+        max-width: 100% !important;
+    max-height: 100% !important;
+}
+#royalslider-def > .rsOverflow.grab-cursor {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* hide caption unless present */
+.rsDefault .rsGCaption{
+    position: absolute;
+    opacity: 0.5;
+    padding: 0 !important;
+    min-height: 0 !important;
+    z-index: 111;
+}
+
+/* make thumbnail smaller */
+.rsDefault .rsThumbsHor{
+    padding-top: 0 !important;    
+}
+.rsDefault .rsThumbsHor{
+    height: 48px;   
+}
+.rsDefault .rsThumb{
+    height: 48px;
+    width: 62px;
+}
+
+/* make header smaller */
+.m_ryl_sld .d_hdr{
+    min-height: 0 !important;
+}
+.m_ryl_sld_hdr_address{
+    padding:0;
+}
+
+/* hide feedback button */
+.feedbackBtnContainer{
+    display:none !important;
+}
