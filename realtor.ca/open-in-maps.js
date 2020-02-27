@@ -17,7 +17,7 @@ $(document).ready(()=>{
 	$(".m_ryl_sld_hdr_address")[0].append("|  " + price + " | " + bb + " | " + space)
 
 	//link to other sites
-	const mls = $("#MLNumberVal").val();
+	const mls = $("#MLNumberVal").text();
 
 	const sollink = "https://www.searchonlinelistings.ca/listing?key=" + mls
 	const rewlink = "https://www.rew.ca/properties/search/results?query=" + mls
