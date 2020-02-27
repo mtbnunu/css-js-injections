@@ -1,0 +1,7 @@
+.pops-mask,.pops{
+    display:none !important
+    ;
+}
+body.third{
+    overflow:auto;
+}
