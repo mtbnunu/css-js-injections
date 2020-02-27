@@ -17,7 +17,7 @@ $(document).ready(()=>{
     $(".m_ryl_sld_hdr_address")[0].append("|  " + price + " | " + bb + " | " + space)
 
     //link to sol
-	const link = "https://www.searchonlinelistings.ca/listing?key=" + $("#MLNumberVal").text();
-	const atag = "<a href='"+link +"' target='_blnk'>Open in SOL</a>"
-	$("#listingDetailsTabsCon").prepend(atag)
+    const link = "https://www.searchonlinelistings.ca/listing?key=" + $("#MLNumberVal").text();
+    const atag = "<a href='"+link +"' target='_blnk'>Open in SOL</a>"
+    $("#listingDetailsTabsCon").prepend(atag)
 })
