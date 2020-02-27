@@ -36,11 +36,25 @@
 }
 
 /* make header smaller */
-.m_ryl_sld .d_hdr{
-    min-height: 0 !important;
-}
 .m_ryl_sld_hdr_address{
     padding:0;
+}
+body .m_ryl_sld .d_hdr {
+    background-color: rgba(255,255,255,0.5) !important;
+    position: fixed;
+    z-index: inherit;
+    min-height: 0 !important;
+}
+
+div#btnDialogClose {
+    background: white;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+}
+
+.rsDefault .rsFullscreenBtn{
+    display:none;
 }
 
 /* hide feedback button */
