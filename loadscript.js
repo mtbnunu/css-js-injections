@@ -1,24 +1,24 @@
-(function (d, script, style) {
-    if(window.__remoteloaded){
-        return;
+(async () => {
+    const url = "https://raw.githubusercontent.com//mtbnunu/css-js-injections/remote-load/" + window.location.host.replace(/^www\./, "") + "/";
+
+    const load = async (file) => {
+        const d = await fetch(url + file)
+        if (!d.ok) return;
+        return await d.text();
     }
-    url = "https://raw.githubusercontent.com/mtbnunu/css-js-injections/remote-load/" + window.location.host.replace(/^www\./, "");
 
-    window.__remoteloaded=true;
-
-    script = d.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = url + "/index.js";
-
-    style = d.createElement('link');
-    style.rel = 'stylesheet';
-    style.type = 'text/css';
-    style.href = url + "/style.css";
-
-    var head =  d.getElementsByTagName('head')[0];
-    head.appendChild(script);
-    head.appendChild(style);
-
-
-}(document));
+    const script = await load("index.js");
+    const style = await load("style.css");
+    if (script) {
+        try {
+            eval(script);
+        } catch (e) {
+            console.warn(e)
+        }
+    }
+    if (style) {
+        const s = window.document.createElement('style');
+        s.innerHTML = style;
+        window.document.getElementsByTagName('head')[0].appendChild(s);
+    }
+})();
