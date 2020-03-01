@@ -47,3 +47,4 @@ $(document).ready(()=>{
 	place.prepend("<a href='"+sollink +"'>SOL | </a>")
 	place.prepend("<a href='"+rewlink +"'>REW | </a>")
 })
+console.log("lol done")
