@@ -1,5 +1,5 @@
 (async () => {
-    const url = "https://raw.githubusercontent.com//mtbnunu/css-js-injections/remote-load/" + window.location.host.replace(/^www\./, "") + "/";
+    const url = "https://raw.githubusercontent.com/mtbnunu/css-js-injections/remote-load/" + window.location.host.replace(/^www\./, "") + "/";
 
     const load = async (file) => {
         const d = await fetch(url + file)
