@@ -1,7 +1,6 @@
 .pop-mask,.pop{
-    display:none !important
-    ;
+    display:none !important;
 }
-body.third{
+body.third, .site.listing-detail{
     overflow:auto;
 }
