@@ -1,5 +1,4 @@
-
-loadcustom = async () => {
+(async () => {
     const url = "https://raw.githubusercontent.com/mtbnunu/css-js-injections/remote-load/" + window.location.host.replace(/^www\./, "") + "/";
 
     const load = async (file) => {
@@ -22,15 +21,4 @@ loadcustom = async () => {
         s.innerHTML = style;
         window.document.getElementsByTagName('head')[0].appendChild(s);
     }
-};
-
-(function(e, s) {
-    e.src = s;
-    e.onload = function() {
-        jQuery.noConflict();
-        window.$ = window.jQuery;
-        console.log('jQuery injected');
-        loadcustom();
-    };
-    document.head.appendChild(e);
-})(document.createElement('script'), '//code.jquery.com/jquery-latest.min.js')
+})();
