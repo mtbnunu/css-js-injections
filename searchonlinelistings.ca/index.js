@@ -10,7 +10,7 @@
 		    return RegExp(text).test(element.textContent);
 		  });
 		}
-		const mls = contains(".info-content","MLS Listing ID")[0].querySelector(".info-data").innerHTML
+		const mls = contains(".info-content","MLS")[0].querySelector(".info-data").innerHTML
 		const rltlink = "https://www.realtor.ca/map#Area=" + mls + "&ApplicationId=1&RecordsPerPage=9&Page=1"
 		const rewlink = "https://www.rew.ca/properties/search/results?query=" + mls
 
