@@ -59,7 +59,7 @@ $(document).ready(()=>{
 	const bb = $("#BedroomIcon .listingIconNum").text() + "/" + $("#BathroomIcon .listingIconNum").text();
 	const spaceIn = $("#propertyDetailsSectionVal_InteriorFloorSpace .propertyDetailsSectionContentValue").text();
 	const spaceOut = $("#propertyDetailsSectionContentSubCon_LandSize .propertyDetailsSectionContentValue").text();
-	$(".m_ryl_sld_hdr_address")[0].append("|  " + price + " | " + bb + " | floor:" + spaceIn + " | land:" + spaceOut)
+	$(".m_ryl_sld_hdr_address")[0].append("|  " + price + " | " + bb + " | " + spaceIn + " / " + spaceOut)
 
 	//link to sol
 	const mls = $("#MLNumberVal").text();
