@@ -19,7 +19,7 @@ $(document).ready(()=>{
 	
 	    // add maps link
 	    const address = listingAddress.innerText.replace("\n"," ");
-	    addLink("https://www.google.com/maps?t=k&q=" + encodeURIComponent(address), "View on Google Maps")
+	    addLink("https://www.google.com/maps/place/" + encodeURIComponent(address), "View on Google Maps")
 
 
 	    // add bc assessment link
