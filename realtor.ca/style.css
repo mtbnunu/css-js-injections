@@ -14,6 +14,13 @@
     height: 100% !important;
 }
 
+/* zoom image even if lowres */
+img.rsImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 /* hide caption unless present */
 .rsDefault .rsGCaption{
     position: absolute;
