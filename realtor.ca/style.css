@@ -1,3 +1,17 @@
+/* Side Listing bigger image */
+.smallListingCardImage {
+	height: 184px;
+    width: 215px;
+    max-width:none;
+}
+.smallListingCard {
+	width: 500px;
+}
+#mapSidebarCon{
+	width:518px;
+}
+ 
+
 /* use full modal size */
 #pnlImageCarousel{
     left: 0 !important;
