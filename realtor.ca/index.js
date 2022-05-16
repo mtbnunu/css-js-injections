@@ -52,6 +52,18 @@ $(document).ready(()=>{
 		    });
 
 		})
+		
+		//add floodmaps link
+		
+		const directionButton = document.getElementById("listingDirectionsBtn");
+		if(directionButton && directionButton.href){
+			const directionUrl = new URL(directionButton.href);
+			const latLong = directionUrl.searchParams.get("destination")?.split(",")
+			const floodmapsUrl = `https://coastal.climatecentral.org/map/17/${latLong[1]}/${latLong[0]}/?theme=sea_level_rise&map_type=year&basemap=roadmap&contiguous=true&elevation_model=best_available&forecast_year=2050&pathway=rcp45&percentile=p50&refresh=true&return_level=return_level_1&rl_model=tebaldi_2012&slr_model=kopp_2014`
+			console.log(floodmapsUrl);
+			addLink("Flood Map", floodmapsUrl)
+		}
+		
 	}
 
 	//add details to modal
